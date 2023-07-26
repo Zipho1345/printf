@@ -3,6 +3,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "main.h"
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
@@ -108,7 +109,7 @@ char buffer[],
 
 /****************** UTILS ******************/
 int is_printable(char);
-int append_hexa_code(char, char[], int);
+int append_hexa_code(char, char[],int);
 int is_digit(char);
 
 long int convert_size_number(long int num, int size);
